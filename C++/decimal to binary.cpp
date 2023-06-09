@@ -13,3 +13,23 @@ int main(){
   }
   cout<< digit;
 }
+
+
+
+// Another process
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+  int n,bit,sum=0;
+  cin>>n;
+  int i = 0;
+  while(n!=0){
+    bit = n % 2;
+    sum = sum + bit * pow(10,i);
+    n = n / 2;
+    i++;
+    }
+  cout<<sum;
+}
